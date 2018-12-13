@@ -20,8 +20,8 @@ class Test_Login:
     @pytest.mark.parametrize('test_number,input_text,assert_text,text',gain_input_yaml())
     @allure.step(title='验证搜索功能的正确性' )
     def test_setting(self,test_number,input_text,assert_text,text):
+        @allure.step(title='用例编号:%s'% test_number)
         def test_number_of():
-            allure.attach('用例编号','{0}'.format(test_number))
             self.Dv.return_page().send_keys_text(Page.search_setting,input_text,input_text)
             time.sleep(1)
             self.Dv.return_page().assert_gain_textlist(assert_text)
