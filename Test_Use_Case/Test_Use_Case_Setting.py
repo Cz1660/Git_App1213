@@ -31,9 +31,12 @@ class Test_Login:
             except Exception as E:
                 print(E)
             finally:
-                print(test_number)
-                print(self.Dv.return_page().gain_text_list(Page.search_title))
-                self.Dv.return_page().click_back_button()
+                def test_finally():
+                    print(test_number)
+                    print(self.Dv.return_page().gain_text_list(Page.search_title))
+                    self.Dv.return_page().click_back_button()
+                test_finally()
         test_assert_setting()
+
 
 
