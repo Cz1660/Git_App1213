@@ -15,7 +15,7 @@ class Base_Method:
     def send_keys_text(self,loc,text,input_name):
         element = self.find_element(loc)
         element.clear()
-        allure.attach('input_name','{0}'.format(input_name))
+        allure.attach('输入','{0}'.format(input_name))
         element.send_keys(text)
     def gain_screenshot(self):
         self.time = time.strftime('%Y-%m-%d_%H-%M-%S',time.localtime(time.time()))
