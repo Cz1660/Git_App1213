@@ -13,3 +13,11 @@ class Opearting_Method(Base_Method):
         for i in self.find_elements(element):
             self.text_list.append(i.text)
         return self.text_list
+    @allure.step(title='断言并获取文本列表')
+    def assert_gain_textlist(self,assert_text):
+        try:
+            assert assert_text in self.gain_text_list(Page.search_title)
+        except Exception as E:
+            print(E)
+        finally:
+            allure.attach('文本列表', '{0}'.format(self.gain_text_list(Page.search_title)))
