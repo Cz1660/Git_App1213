@@ -1,0 +1,30 @@
+<ns0:test-suite xmlns:ns0="urn:model.allure.qatools.yandex.ru" start="1544669270910" stop="1544669314792">
+  <name>Test_Use_Case</name>
+  <labels/>
+  <test-cases>
+    <test-case start="1544669270910" status="passed" stop="1544669305282">
+      <name>Test_Use_Case_Setting.Test_Login.test_setting[test_001-\u7535\u6c60-\u7535\u6c60]</name>
+      <attachments/>
+      <labels>
+        <label name="severity" value="normal"/>
+        <label name="thread" value="6992-MainThread"/>
+        <label name="host" value="EDIANZU-9E3HI0F"/>
+        <label name="framework" value="pytest"/>
+        <label name="language" value="cpython3"/>
+      </labels>
+      <steps/>
+    </test-case>
+    <test-case start="1544669305283" status="passed" stop="1544669314792">
+      <name>Test_Use_Case_Setting.Test_Login.test_setting[test_002-WLAN-WLAN \u8bbe\u7f6e]</name>
+      <attachments/>
+      <labels>
+        <label name="severity" value="normal"/>
+        <label name="thread" value="6992-MainThread"/>
+        <label name="host" value="EDIANZU-9E3HI0F"/>
+        <label name="framework" value="pytest"/>
+        <label name="language" value="cpython3"/>
+      </labels>
+      <steps/>
+    </test-case>
+  </test-cases>
+</ns0:test-suite>
